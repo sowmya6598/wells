@@ -15,14 +15,30 @@ class HomeView extends StatelessWidget {
           child: Column(
         children: <Widget>[
           NavigationBar(),
-          Row(children: []),
-          Join(),
+          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            Join(),
+            Container(height: 300, child: Image.asset('assets/face.png'))
+          ]),
           Meet(),
           Text('Why Am I Running?',
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
           Why(),
-          Text('FAQ',
-              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
+          SizedBox(
+              width: 50,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('FAQ',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w900, fontSize: 20)),
+                  Padding(
+                      padding: EdgeInsets.only(left: 10),
+                      child: Divider(
+                        color: Color(0xffDE0000),
+                        thickness: 3.0,
+                      )),
+                ],
+              )),
           FAQ(),
           Footer()
         ],

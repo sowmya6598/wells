@@ -4,6 +4,7 @@ class Join extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        margin: EdgeInsets.symmetric(vertical: 50),
         height: 300,
         child: Column(
           children: [
@@ -12,18 +13,21 @@ class Join extends StatelessWidget {
                     color: Color(0xff0746BF),
                     fontSize: 25,
                     fontWeight: FontWeight.w900)),
+            const SizedBox(height: 30),
             const SizedBox(
                 width: 300,
                 child: TextField(
                   decoration: InputDecoration(
                       border: OutlineInputBorder(), labelText: 'Name'),
                 )),
+            const SizedBox(height: 10),
             const SizedBox(
                 width: 300,
                 child: TextField(
                   decoration: InputDecoration(
                       border: OutlineInputBorder(), labelText: 'Email Address'),
                 )),
+            const SizedBox(height: 10),
             SizedBox(
                 width: 300,
                 height: 50,
