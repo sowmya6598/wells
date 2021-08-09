@@ -17,15 +17,27 @@ class Join extends StatelessWidget {
             const SizedBox(
                 width: 300,
                 child: TextField(
+                  cursorColor: Colors.grey,
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(), labelText: 'Name'),
+                      labelStyle: TextStyle(color: Colors.grey),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(width: 1, color: Colors.grey),
+                      ),
+                      border: OutlineInputBorder(),
+                      labelText: 'Name'),
                 )),
             const SizedBox(height: 10),
             const SizedBox(
                 width: 300,
                 child: TextField(
+                  cursorColor: Colors.grey,
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(), labelText: 'Email Address'),
+                      labelStyle: TextStyle(color: Colors.grey),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(width: 1, color: Colors.grey),
+                      ),
+                      border: OutlineInputBorder(),
+                      labelText: 'Email Address'),
                 )),
             const SizedBox(height: 10),
             SizedBox(
