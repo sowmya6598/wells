@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fnm_wells/constants.dart';
 
 class FAQ extends StatefulWidget {
   @override
@@ -29,7 +30,7 @@ class _FAQ extends State<FAQ> {
                   margin: EdgeInsets.symmetric(vertical: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(3.0)),
-                    border: Border.all(width: 2, color: Colors.grey),
+                    border: Border.all(width: 2, color: greyColor),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,8 +42,8 @@ class _FAQ extends State<FAQ> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.w800,
                                     color: selectedFAQ == index
-                                        ? Color(0xff0746BF)
-                                        : Colors.grey)),
+                                        ? blueColor
+                                        : greyColor)),
                             ElevatedButton(
                                 style: ElevatedButton.styleFrom(
                                     primary: Colors.white),

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:fnm_wells/constants.dart';
 
 class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xffDE0000),
+      color: redColor,
       height: 200,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

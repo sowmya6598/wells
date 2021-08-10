@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fnm_wells/constants.dart';
 
 class Join extends StatelessWidget {
   @override
@@ -10,18 +11,18 @@ class Join extends StatelessWidget {
           children: [
             const Text('Join The Movement',
                 style: TextStyle(
-                    color: Color(0xff0746BF),
+                    color: blueColor,
                     fontSize: 25,
                     fontWeight: FontWeight.w900)),
             const SizedBox(height: 30),
             const SizedBox(
                 width: 300,
                 child: TextField(
-                  cursorColor: Colors.grey,
+                  cursorColor: greyColor,
                   decoration: InputDecoration(
-                      labelStyle: TextStyle(color: Colors.grey),
+                      labelStyle: TextStyle(color: greyColor),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(width: 1, color: Colors.grey),
+                        borderSide: BorderSide(width: 1, color: greyColor),
                       ),
                       border: OutlineInputBorder(),
                       labelText: 'Name'),
@@ -30,11 +31,11 @@ class Join extends StatelessWidget {
             const SizedBox(
                 width: 300,
                 child: TextField(
-                  cursorColor: Colors.grey,
+                  cursorColor: greyColor,
                   decoration: InputDecoration(
-                      labelStyle: TextStyle(color: Colors.grey),
+                      labelStyle: TextStyle(color: greyColor),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(width: 1, color: Colors.grey),
+                        borderSide: BorderSide(width: 1, color: greyColor),
                       ),
                       border: OutlineInputBorder(),
                       labelText: 'Email Address'),
@@ -47,7 +48,7 @@ class Join extends StatelessWidget {
                     onPressed: _sendEmail(),
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all<Color>(Color(0xff0746BF)),
+                          MaterialStateProperty.all<Color>(blueColor),
                     ),
                     child: Text('GET INVOLVED',
                         style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fnm_wells/constants.dart';
 
 class Why extends StatelessWidget {
   final List<Map> reasons = [
@@ -25,7 +26,7 @@ class Why extends StatelessWidget {
                   padding: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                    border: Border.all(width: 4, color: Color(0xff0746BF)),
+                    border: Border.all(width: 4, color: blueColor),
                   ),
                   alignment: Alignment.center,
                   child: Column(

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:fnm_wells/widgets/navigationBar/navigation_bar.dart';
-import 'package:fnm_wells/widgets/join/join.dart';
-import 'package:fnm_wells/widgets/meet/meet.dart';
-import 'package:fnm_wells/widgets/why/why.dart';
-import 'package:fnm_wells/widgets/faq/faq.dart';
-import 'package:fnm_wells/widgets/footer/footer.dart';
+import 'package:fnm_wells/constants.dart';
+import 'package:fnm_wells/navigation_bar.dart';
+import 'package:fnm_wells/join.dart';
+import 'package:fnm_wells/meet.dart';
+import 'package:fnm_wells/why.dart';
+import 'package:fnm_wells/faq.dart';
+import 'package:fnm_wells/footer.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -34,7 +35,7 @@ class HomeView extends StatelessWidget {
                   Padding(
                       padding: EdgeInsets.only(left: 10),
                       child: Divider(
-                        color: Color(0xffDE0000),
+                        color: redColor,
                         thickness: 3.0,
                       )),
                 ],

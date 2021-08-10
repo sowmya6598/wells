@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fnm_wells/constants.dart';
 
 class Meet extends StatelessWidget {
   @override
@@ -23,7 +24,7 @@ class Meet extends StatelessWidget {
                   Padding(
                       padding: EdgeInsets.only(left: 20),
                       child: Divider(
-                        color: Color(0xffDE0000),
+                        color: redColor,
                         thickness: 3.0,
                       )),
                 ],
