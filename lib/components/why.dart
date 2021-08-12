@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fnm_wells/constants.dart';
+import 'package:fnm_wells/responsive.dart';
 
 class Why extends StatelessWidget {
   final List<Map> reasons = [
@@ -11,14 +12,17 @@ class Why extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double _height = MediaQuery.of(context).size.height;
+    double _width = MediaQuery.of(context).size.width;
+    var _size = MediaQuery.of(context).size;
+
     return Container(
-        margin: EdgeInsets.symmetric(vertical: 30),
-        height: 900,
+        margin: EdgeInsets.symmetric(vertical: 50, horizontal: _width / 6),
+        height: _height * 1.5, // TO DO
         child: GridView.builder(
             physics: NeverScrollableScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-            ),
+                crossAxisCount: isMobile(context) ? 1 : 2),
             itemCount: reasons.length,
             itemBuilder: (BuildContext ctx, index) {
               return Container(

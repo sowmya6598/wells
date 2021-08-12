@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fnm_wells/home_view.dart';
+import 'package:fnm_wells/screens/home_view.dart';
 
 void main() => runApp(MyApp());
 
